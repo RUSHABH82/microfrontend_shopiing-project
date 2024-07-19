@@ -1,4 +1,5 @@
-import { mount } from "products/ProductsIndex";
-import "cart/CartShow";
+import {mount as productMount} from "products/ProductsIndex";
+import {mount as cartMount} from "cart/CartIndex";
 
-mount(document.getElementById("dev-products"));
+productMount(document.getElementById("dev-products-container"));
+cartMount(document.getElementById("dev-cart-container"));
